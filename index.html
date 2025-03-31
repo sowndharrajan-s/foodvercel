@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<!--default code
+<div class="2xl:container mx-auto">
+    <div class="w-[90%] mx-auto grid grid-cols-1">-->
+
+<!-- style set-->
+<!--heading:font-[poppins] text-[22px] leading-[26px] font-normal text-[#323f4b]
+paragraph:font-[poppins] text-[16px] leading-[22px] font-normal text-[#7b8794]
+buttons:
+    -->
+<!--git init
+git add .
+git commit
+git remote add origin
+git push -u origin master-->
+
+<body>
+    <!--Navbar-->
+    <div class="2xl:container mx-auto fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 h-[12vh] ">
+            <div class="flex flex-row justify-between items-center ">
+                <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/food-munch-img.png" alt="logo" class="h-14 pl-14 ">
+                <div class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="1em" height="1em" id="menu">
+                        <path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="1em" height="1em" id="cross"
+                        class="hidden">
+                        <g fill="currentColor" fillrule="evenodd" cliprule="evenodd">
+                            <path
+                                d="M5.47 5.47a.75.75 0 0 1 1.06 0l12 12a.75.75 0 1 1-1.06 1.06l-12-12a.75.75 0 0 1 0-1.06">
+                            </path>
+                            <path
+                                d="M18.53 5.47a.75.75 0 0 1 0 1.06l-12 12a.75.75 0 0 1-1.06-1.06l12-12a.75.75 0 0 1 1.06 0">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center md:flex-row md:justify-end md:items-center gap-6" id="content">
+                <a href="" class="font-[] text-[18px] leading-[26px] font-normal text-[#323f4b]">why choose us</a> 
+                <a href="#explore menu" class="font-[] text-[18px] leading-[26px] font-normal text-[#323f4b]">explore menu</a> 
+                <a href="#Fresh Section" class="font-[] text-[18px] leading-[26px] font-normal text-[#323f4b]">Fresh Section</a> 
+                <a href="#order" class="font-[] text-[18px] leading-[26px] font-normal text-[#323f4b]">order</a> 
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!--section 1: hero section-->
+    <section id="" class="py-15">
+        <div class="2xl:container mx-auto">
+            <div class="w-[100%] mx-auto grid-cols-1">
+                <div class="bg-hero flex flex-col last:items-center justify-center gap-3 text-center">
+                    <p class="font-[poppins] text-[45px] leading-[54px] font-semibold text-[#fff]">Get Delicious Food
+                        Anytime</p>
+                    <p class="font-[poppins] text-[24px] leading-[36px] font-semibold text-[#fff]">Eat Smart & Healthy
+                    </p>
+                    <div class="space-x-3">
+                        <button
+                            class="bg-yellow-500 py-2 px-4 font-normal text-white text-[14px] leading-[20px] rounded-lg font-[poppins]">view
+                            menu</button>
+                        <button
+                            class=" border border-amber-500  py-2 px-4 font-normal text-amber-500 text-[14px] leading-[20px] rounded-lg font-[poppins]">Order
+                            Now</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- why choose us -->
+    <section id="why" class="py-10 bg-[#f8fbfe] ">
+        <div class="2xl:container mx-auto">
+            <div class="w-[90%] mx-auto grid grid-cols-1">
+                <div class="py-5">
+                    <p class="font-[poppins] text-[28px] leading-[34px] font-bold text-[#183b56]">Why Choose Us</p>
+                    <p class="font-[poppins] text-[16px] leading-[24px] font-normal text-[#68899d]">We use both original
+                        recipes and classic versions of famous food items. </p>
+
+                </div>
+            </div>
+            <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!--card-->
+                <div
+                    class="bg-white border border-[#ebeff7] p-5 rounded-lg flex flex-col justify-center items-center text-center gap-2 ">
+                    <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/food-serve.png"
+                        alt="Card-image">
+                    <h4 class="font-[poppins] text-[22px] leading-[26px] font-medium text-[#323f4b]">Food service</h4>
+                    <p class="font-[poppins] text-[16px] leading-[22px] font-normal text-[#7b8794]">Experience fine
+                        dining at the comfort of your home.
+                        All our orders are carefully packed and arranged to
+                        give you the nothing less than perfect</p>
+                </div>
+
+                <div
+                    class="bg-white border border-[#ebeff7] p-5 rounded-lg flex flex-col justify-center items-center text-center gap-2 ">
+                    <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/offers-img.png"
+                        alt="Card-image">
+                    <h4 class="font-[poppins] text-[22px] leading-[26px] font-medium text-[#323f4b]">Fresh Food</h4>
+                    <p class="font-[poppins] text-[16px] leading-[22px] font-normal text-[#7b8794]">The Fresh Food group
+                        provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses
+                        so that you always get them tree to plate. </p>
+                </div>
+
+                <div
+                    class="bg-white border border-[#ebeff7] p-5 rounded-lg flex flex-col justify-center items-center text-center gap-2 ">
+                    <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/fruits-img.png"
+                        alt="Card-image">
+                    <h4 class="font-[poppins] text-[22px] leading-[26px] font-medium text-[#323f4b]">Best Offers</h4>
+                    <p class="font-[poppins] text-[16px] leading-[22px] font-normal text-[#7b8794]">Experience fine
+                        dining at the comfort of your home.
+                        All our orders are carefully packed and arranged to
+                        give you the nothing less than perfect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--section:3 explore menu-->
+    <section id="explore menu" class="py-10 ">
+        <div class="2xl:container mx-auto ">
+            <div class="w-[90%] mx-auto grid grid-cols-1">
+                <div class="py-5">
+                    <p class="font-[poppins] text-[28px] leading-[34px] font-bold text-[#183b56]">Explore Menu</p>
+
+                </div>
+
+
+            </div>
+            <div class="2xl:container mx-auto ">
+                <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!--cards-->
+                    <!--non veg starters-->
+                    <div class="bg-white shadow-2xl rounded-2xl p-5 object-cover">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/em-ginger-fried-img.png"
+                            alt="menu-image" class="rounded-2xl">
+                        <div class="px-2 py-2 space-y-2">
+                            <p class="font-[poppins] text-[18px] leading-[22px] font-medium text-[#323f4b]">Non-Veg
+                                Starters</p>
+                            <p
+                                class="flex flex-row items-center gap-1 font-[poppins] text-[16px] leading-[22px] font-medium text-[#f0dc47] hover:underline hover:text-blue-500 ">
+                                View all <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="1em"
+                                    height="1em" {...props}>
+                                    <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                </svg>
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <!--seafood-->
+                    <div class="bg-white shadow-2xl rounded-2xl p-5">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/em-grilled-seafood-img.png"
+                            alt="menu-image" class="rounded-2xl">
+                        <div class="px-2 py-2 space-y-2">
+                            <p class="font-[poppins] text-[18px] leading-[22px] font-medium text-[#323f4b]">seafood</p>
+                            <p
+                                class="flex flex-row items-center gap-1 font-[poppins] text-[16px] leading-[22px] font-medium text-[#f0dc47] hover:underline hover:text-blue-500 ">
+                                View all <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="1em"
+                                    height="1em" {...props}>
+                                    <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                </svg>
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <!--biriyani-->
+                    <div class="bg-white shadow-2xl rounded-2xl p-5">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/em-hyderabadi-biryani-img.png"
+                            alt="menu-image" class="rounded-2xl">
+                        <div class="px-2 py-2 space-y-2">
+                            <p class="font-[poppins] text-[18px] leading-[22px] font-medium text-[#323f4b]">Biriyani</p>
+                            <p
+                                class="flex flex-row items-center gap-1 font-[poppins] text-[16px] leading-[22px] font-medium text-[#f0dc47] hover:underline hover:text-blue-500 ">
+                                View all <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="1em"
+                                    height="1em" {...props}>
+                                    <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                </svg>
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <!--paneer-->
+                    <div class="bg-white shadow-2xl rounded-2xl p-5">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/em-veg-starters-img.png"
+                            alt="menu-image" class="rounded-2xl">
+                        <div class="px-2 py-2 space-y-2">
+                            <p class="font-[poppins] text-[18px] leading-[22px] font-medium text-[#323f4b]">paneer</p>
+                            <p
+                                class="flex flex-row items-center gap-1 font-[poppins] text-[16px] leading-[22px] font-medium text-[#f0dc47] hover:underline hover:text-blue-500 ">
+                                View all <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="1em"
+                                    height="1em" {...props}>
+                                    <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                </svg>
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <!--Salad-->
+                    <div class="bg-white shadow-2xl rounded-2xl p-5">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/em-gluten-img.png"
+                            alt="menu-image" class="rounded-2xl">
+                        <div class="px-2 py-2 space-y-2">
+                            <p class="font-[poppins] text-[18px] leading-[22px] font-medium text-[#323f4b]">Salad</p>
+                            <p
+                                class="flex flex-row items-center gap-1 font-[poppins] text-[16px] leading-[22px] font-medium text-[#f0dc47] hover:underline hover:text-blue-500 ">
+                                View all <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="1em"
+                                    height="1em" {...props}>
+                                    <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                </svg>
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <!--Dessert-->
+                    <div class="bg-white shadow-2xl rounded-2xl p-5">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/em-coffee-bourbon-img.png"
+                            alt="menu-image" class="rounded-2xl">
+                        <div class="px-2 py-2 space-y-2">
+                            <p class="font-[poppins] text-[18px] leading-[22px] font-medium text-[#323f4b]">Desserts</p>
+                            <p
+                                class="flex flex-row items-center gap-1 font-[poppins] text-[16px] leading-[22px] font-medium text-[#f0dc47] hover:underline hover:text-blue-500 ">
+                                View all <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="1em"
+                                    height="1em" {...props}>
+                                    <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                </svg>
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <!--Noodles-->
+                    <div class="bg-white shadow-2xl rounded-2xl p-5">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/em-mushroom-noodles-img.png"
+                            alt="menu-image" class="rounded-2xl">
+                        <div class="px-2 py-2 space-y-2">
+                            <p class="font-[poppins] text-[18px] leading-[22px] font-medium text-[#323f4b]">Noodles</p>
+                            <p
+                                class="flex flex-row items-center gap-1 font-[poppins] text-[16px] leading-[22px] font-medium text-[#f0dc47] hover:underline hover:text-blue-500 ">
+                                View all <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="1em"
+                                    height="1em" {...props}>
+                                    <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                </svg>
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <!--Soups-->
+                    <div class="bg-white shadow-2xl rounded-2xl p-5">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/em-soup-img.png"
+                            alt="menu-image" class="rounded-2xl">
+                        <div class="px-2 py-2 space-y-2">
+                            <p class="font-[poppins] text-[18px] leading-[22px] font-medium text-[#323f4b]">Soups</p>
+                            <p
+                                class="flex flex-row items-center gap-1 font-[poppins] text-[16px] leading-[22px] font-medium text-[#f0dc47] hover:underline hover:text-blue-500 ">
+                                View all <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="1em"
+                                    height="1em" {...props}>
+                                    <path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path>
+                                </svg>
+                            </p>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+    </section>
+
+
+    <!--Fresh Section-->
+    <section id="Fresh Section" class="py-10 bg-[#f9fbfe]">
+        <div class="2xl:container mx-auto ">
+            <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/healthy-food-plate-img.png"
+                        alt="fresh section">
+
+                </div>
+                <div class="space-y-4 ">
+                    <p class="font-[poppins] text-[28px] leading-[34px] font-bold text-[#183b56]">
+                        Fresh, Healthy, Organic, Delicious Fruits
+                    </p>
+                    <p class="font-[poppins] text-[16px] leading-[22px] font-normal text-[#7b8794]">
+                        Say no to harmful chemicals and go fully organic with our range of fresh fruits and veggies.
+                        Pamper your body and your senses with the true and unadulterated gifts from mother nature. with
+                        the true and unadulterated gifts from mother nature.
+                    </p>
+                    <button
+                        class="bg-yellow-500 py-2 px-4 font-normal text-white text-[14px] leading-[20px] rounded-lg font-[poppins]">Watch
+                        Video</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section -5: payment-->
+    <section id="payment" class="py-10">
+        <div class="2xl:container mx-auto">
+            <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+                <div class="space-y-3 order-2 md:order-1">
+                    <p class="font-[poppins] text-[28px] leading-[34px] font-bold text-[#183b56]">
+                        Delivery and Payment
+                    </p>
+                    <p class="font-[poppins] text-[16px] leading-[22px] font-normal text-[#7b8794]">
+                        Enjoy hassle-free payment with the plenitude of payment options available for you. Get live
+                        tracking and locate your food on a live map. It's quite a sight to see your food arrive to your
+                        door. Plus, you get a 5% discount on every order every time you pay online.
+                    </p>
+                    <button
+                        class="bg-yellow-500 py-2 px-4 font-normal text-white text-[14px] leading-[20px] rounded-lg font-[poppins]">Order
+                        Now</button>
+                    <div class="flex flex-row gap-5">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/visa-card-img.png "
+                            alt="img" class="h-12">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/master-card-img.png"
+                            alt="img" class="h-12">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/master-card-img.png"
+                            alt="img" class="h-12">
+                        <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/american-express-img.png"
+                            alt="img" class="h-10">
+                    </div>
+
+                </div>
+                <div class="flex flex-row justify-center items-center order-1 md:order-2">
+                    <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/delivery-payment-section-img.png"
+                        alt="offer" class="h-64">
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!--section :6 order-->
+    <section id="order" class="py-10 bg-[#FCEDB3]">
+        <div class="2xl:container mx-auto">
+            <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+                <div class="space-y-3 ">
+                    <p class="font-[poppins] text-[28px] leading-[34px] font-bold text-[#183b56]">
+                        Thank you for being a valuable customer to us.
+                    </p>
+                    <p class="font-[poppins] text-[16px] leading-[22px] font-normal text-[#7b8794]">
+                        We have a surprise gift for you
+                    </p>
+                    <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/thanking-customers-section-img.png "
+                        alt="" class="h-56 md:hidden">
+                    <button
+                        class="bg-yellow-500 py-2 px-4 font-normal text-white text-[14px] leading-[20px] rounded-lg font-[poppins]">Reedem
+                        Gift</button>
+                </div>
+                <div class="flex flex-row justify-center items-center">
+                    <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/thanking-customers-section-img.png "
+                        alt="" class="h-64 hidden md:block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--section 1: follow us-->
+    <section id="follow us" class="py-10 ">
+        <div class="2xl:container mx-auto">
+            <div class="w-[90%] mx-auto grid grid-cols-1">
+                <div>
+                    <div>
+                        <div class="flex flex-row justify-center items-center gap-8">
+                            <p class="font-bold text-[30px] mb-6">Follow Us</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-center items-center gap-8">
+                        <div
+                            class="bg-[#faf7e8] h-16 w-16 rounded-full flex justify-center items-center border border-slate-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256" width="1.5em" height="1.5em"
+                                {...props}>
+                                <g fill="none">
+                                    <rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60"></rect>
+                                    <rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60"></rect>
+                                    <path fill="#fff"
+                                        d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396s-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413s.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5s6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355s22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334s-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334">
+                                    </path>
+                                    <defs>
+                                        <radialGradient id="skilliconsInstagram0" cx="0" cy="0" r="1"
+                                            gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#FD5"></stop>
+                                            <stop offset=".1" stopcolor="#FD5"></stop>
+                                            <stop offset=".5" stopcolor="#FF543E"></stop>
+                                            <stop offset="1" stopcolor="#C837AB"></stop>
+                                        </radialgradient>
+                                        <radialgradient id="skillIconsInstagram1" cx="0" cy="0" r="1"
+                                            gradienttransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)"
+                                            gradientunits="userSpaceOnUse">
+                                            <stop stopcolor="#3771C8"></stop>
+                                            <stop offset=".128" stopcolor="#3771C8"></stop>
+                                            <stop offset="1" stopcolor="#60F" stopopacity="0"></stop>
+                                        </radialGradient>
+                                    </defs>
+                                </g>
+                            </svg>
+                        </div>
+                        <div
+                            class="bg-[#faf7e8] h-16 w-16 rounded-full flex justify-center items-center border border-slate-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256" width="1.5em" height="1.5em"
+                                {...props}>
+                                <g fill="none">
+                                    <rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60"></rect>
+                                    <rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60"></rect>
+                                    <path fill="#fff"
+                                        d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396s-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413s.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5s6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355s22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334s-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334">
+                                    </path>
+                                    <defs>
+                                        <radialGradient id="skilliconsInstagram0" cx="0" cy="0" r="1"
+                                            gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#FD5"></stop>
+                                            <stop offset=".1" stopcolor="#FD5"></stop>
+                                            <stop offset=".5" stopcolor="#FF543E"></stop>
+                                            <stop offset="1" stopcolor="#C837AB"></stop>
+                                        </radialgradient>
+                                        <radialgradient id="skillIconsInstagram1" cx="0" cy="0" r="1"
+                                            gradienttransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)"
+                                            gradientunits="userSpaceOnUse">
+                                            <stop stopcolor="#3771C8"></stop>
+                                            <stop offset=".128" stopcolor="#3771C8"></stop>
+                                            <stop offset="1" stopcolor="#60F" stopopacity="0"></stop>
+                                        </radialGradient>
+                                    </defs>
+                                </g>
+                            </svg>
+                        </div>
+                        <div
+                            class="bg-[#faf7e8] h-16 w-16 rounded-full flex justify-center items-center border border-slate-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 256 256" width="1.5em" height="1.5em"
+                                {...props}>
+                                <g fill="none">
+                                    <rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60"></rect>
+                                    <rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60"></rect>
+                                    <path fill="#fff"
+                                        d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396s-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413s.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5s6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355s22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334s-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334">
+                                    </path>
+                                    <defs>
+                                        <radialGradient id="skilliconsInstagram0" cx="0" cy="0" r="1"
+                                            gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stopColor="#FD5"></stop>
+                                            <stop offset=".1" stopcolor="#FD5"></stop>
+                                            <stop offset=".5" stopcolor="#FF543E"></stop>
+                                            <stop offset="1" stopcolor="#C837AB"></stop>
+                                        </radialgradient>
+                                        <radialgradient id="skillIconsInstagram1" cx="0" cy="0" r="1"
+                                            gradienttransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)"
+                                            gradientunits="userSpaceOnUse">
+                                            <stop stopcolor="#3771C8"></stop>
+                                            <stop offset=".128" stopcolor="#3771C8"></stop>
+                                            <stop offset="1" stopcolor="#60F" stopopacity="0"></stop>
+                                        </radialGradient>
+                                    </defs>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--section :7 footer section-->
+    <section id="footer section" class="py-10 bg-[#0d2436]">
+        <div class="2xl:container mx-auto">
+            <div class="w-[90%] mx-auto grid grid-cols-1 ">
+                <div class="flex flex-col items-center justify-center gap-2">
+                    <img src="https://ik.imagekit.io/4z8covdo9/MERN-COURSE-ASSETS/FOOD-STORE/food-munch-img.png"
+                        alt="logo-image" class="h-20">
+                    <p class="font-[poppins] text-[16px] leading-[22px] font-semibold text-[#7b8794]">
+                        orderfood@foodmunch.com</p>
+                    <p class="font-[poppins] text-[16px] leading-[22px] font-normal text-[#7b8794]">123 Ayur Vigyan
+                        Nagar, New Delhi, India.</p>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        const menuElement = document.getElementById("menu");
+        const crossElement = document.getElementById("cross");
+        const contentElement = document.getElementById("content");
+
+        menuElement.addEventListener("click", (e) => {
+            menuElement.classList.toggle("hidden")
+            crossElement.classList.toggle("hidden")
+            contentElement.classList.toggle("hidden")
+
+
+
+        })
+
+        crossElement.addEventListener("click", (e) => {
+            menuElement.classList.toggle("hidden")
+            crossElement.classList.toggle("hidden")
+            contentElement.classList.toggle("hidden")
+
+        })
+    </script>
+
+
+
+</body>
+
+</html>
